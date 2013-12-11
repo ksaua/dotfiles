@@ -1,2 +1,8 @@
 #!/bin/bash
-ln -s /home/knut/.dotfiles/emacs/init.el /home/knut/.emacs.d/init.el
+
+# emacs
+mkdir -p $HOME/.emacs.d
+ln -s $HOME/.dotfiles/emacs/init.el $HOME/.emacs.d/init.el
+
+# git
+ln -s $HOME/.dotfiles/git/.gitconfig $HOME/.gitconfig
