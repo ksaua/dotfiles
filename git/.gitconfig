@@ -3,3 +3,5 @@
 	name = Knut Saua Mathiesen
 [push]
 	default = simple
+[color]
+	ui = true
