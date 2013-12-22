@@ -10,10 +10,15 @@
 
 (defvar my-packages 
   '(helm
-    cider))
+    cider
+    rainbow-delimiters))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
-(ido-mode)
+; Hooks
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+
+(helm-mode)
+;(ido-mode)
