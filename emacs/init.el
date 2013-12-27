@@ -9,9 +9,10 @@
   (package-refresh-contents))
 
 (defvar my-packages 
-  '(helm
-    cider
-    rainbow-delimiters))
+  '(cider
+    rainbow-delimiters
+    color-theme
+    smex))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -20,5 +21,16 @@
 ; Hooks
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
-(helm-mode)
-;(ido-mode)
+; Enable ido-mode og smex
+(ido-mode t)
+(setq ido-enable-flex-matching t)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+
+; Font size
+(set-face-attribute 'default nil :height 100)
+
+; Color theme
+(color-theme-initialize)
+(color-theme-ld-dark)
