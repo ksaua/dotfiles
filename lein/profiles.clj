@@ -1,1 +1,1 @@
-{:user {:plugins [[lein-midje "3.0.0"]]} }
+{:user {:plugins [[lein-midje "3.1.3"]]} }
