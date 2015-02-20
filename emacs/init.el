@@ -28,8 +28,9 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
-; Font size
+; Font
 (set-face-attribute 'default nil :height 100)
+(add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
 
 ; Color theme
 (color-theme-initialize)
