@@ -1,0 +1,5 @@
+export PATH=$PATH:$HOME/bin
+
+alias gs="git status"
+alias cont="git rebase --continue"
+
