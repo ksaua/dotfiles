@@ -35,3 +35,9 @@
 ; Color theme
 (color-theme-initialize)
 (color-theme-ld-dark)
+
+; no startup msg  
+(setq inhibit-startup-message t)        ; Disable startup message 
+
+; Disable backup~ files
+(setq make-backup-files nil) 
