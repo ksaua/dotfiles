@@ -1,0 +1,14 @@
+#!/bin/bash
+# Directory of this script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# emacs
+mkdir -p $HOME/.emacs.d
+ln -s $DIR/emacs/init.el $HOME/.emacs.d/init.el
+
+# git
+ln -s $DIR/git/.gitconfig $HOME/.gitconfig
+
+# lein
+mkdir -p $HOME/.lein
+ln -s $DIR/lein/profiles.clj $HOME/.lein/profiles.clj
