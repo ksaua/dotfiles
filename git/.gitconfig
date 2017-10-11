@@ -7,3 +7,6 @@
 	ui = true
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[cola]
+	fontdiff = Monospace,10,-1,5,50,0,0,0,0,0
+	tabwidth = 4
